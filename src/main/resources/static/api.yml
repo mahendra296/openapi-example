@@ -1,0 +1,21 @@
+openapi: "3.0.2"
+info:
+  title: API Customer
+  version: "1.0"
+servers:
+  - url: https://localhost:8080
+tags:
+  - name: Customer
+    description: Customer specific data.
+
+paths:
+  /hello:
+    get:
+      summary: return hello
+      operationId: getHello
+      responses:
+        200:
+          description: General greeting
+          content:
+            application/json:
+              type: string
